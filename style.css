@@ -1,0 +1,107 @@
+body{
+    background-image: url(images/green-bg.jpg);
+    margin: 0px 0px;
+    
+    
+}
+h1{
+    color: orange;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(26, 125, 255);
+    padding: 10px 0px;
+    
+}
+.intro{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    height: 400px;
+    grid-gap: 1em;
+    margin: 0px 50px;
+}
+
+.date, .day{
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 2em;
+    margin-right: 40px;
+    
+}
+.other-month{
+    background-color: lightgray;
+}
+.day{
+    background-color: rgb(76, 196, 76);
+}
+@media (max-width: 480px) {
+    .calendar{
+        margin: 0px 0px;
+        
+    }
+}
+
+@media (max-width: 700px) {
+    .calendar{
+        margin: 0px 0px;
+        height: 300px;
+        grid-gap: 5px;
+        grid-template-rows: 1.25em repeat(5,1fr);
+    }
+    .date, .day{
+        font-size: 1em;
+        margin-right: 0px;
+    }
+    
+}
+@media (min-width: 702px) and (max-width:910px) {
+    .calendar{
+        
+        height: 400px;
+        width: 1fr;
+        grid-gap: 5px;
+        grid-template-rows: 2em repeat(5,1fr);
+    }
+    .date, .day{
+        font-size: 1em;
+        margin-right: 0px;
+    }
+    
+}
+@media (max-width: 360px) {
+    .calendar{
+        margin: 0px 0px;
+        height: 150px;
+        grid-gap: 2px;
+        grid-template-rows: 0.50em repeat(5,1fr);
+    }
+    .date, .day{
+        font-size: 0.35em;
+        margin-right: 0px;
+    }
+    
+}
+@media (max-height: 575px) {
+    
+    .calendar{
+        
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1em repeat(5,1fr);
+        height:1fr;
+        width: 1fr;
+        grid-gap: .2em;
+        margin: 0px 5px;
+    }
+    .date, .day{
+        font-size: 1em;
+        margin-right: 0px;
+    }
+    
+}
